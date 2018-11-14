@@ -11,7 +11,16 @@ import os
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 import seaborn as sns
-PATH= "C:/Users/jon.harris/Desktop/school/final/input/"
+#used to set different path on each setup
+PATH = ""
+paths = ["C:/Users/jon.harris/Desktop/school/final/input/", "data/"]
+for path in paths:
+    try:
+        os.listdir(path)
+        PATH = path
+    except:
+        filler_exception=0
+print("path: {}".format(PATH))
 print(os.listdir(PATH))
 #files = os.listdir(("E:/School/elen239a/final/input"))
 files = ['application_train.csv','application_test.csv',]
