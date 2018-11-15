@@ -57,11 +57,12 @@ print(data[0]['TARGET'].astype(int).plot.hist())
 
 
 print("some fuckery")
+del data[0]['SK_ID_CURR'] #delete column entirely
+del data[1]['SK_ID_CURR']
 int64cols = data[0].select_dtypes('int64').columns.values.tolist()
 objectcols = data[0].select_dtypes('object').columns.values.tolist()
 float64cols = data[0].select_dtypes('float64').columns.values.tolist()
-
-int64cols.remove("SK_ID_CURR")
+#int64cols.remove("SK_ID_CURR")
 
 
 for keyword in int64cols:
@@ -71,11 +72,12 @@ for keyword in int64cols:
     #data[0][keyword].astype(int).plot.line()
     plt.show()
 
-print (int64cols)
-print('\n')
-print (objectcols)
-print('\n')
-print (float64cols)
+print('int cols: {}\n'.format(int64cols))
+print('dbl cols: {}\n'.format(float64cols))
+print('obj cols: {}\n'.format(objectcols))
+print('obj cols in detail:')
+for col in objectcols:
+    print('{}: {}'.format(col, data[0][col].unique()))
 print('\n')
 
 print("MISSING DATA ANALYSIS")
