@@ -1,3 +1,9 @@
-data/
-input/
+#ignore any csv's, except if they are results
 *.csv
+!results/*.csv
+
+#don't need notebook checkpoints
+.ipynb_checkpoints/
+
+#stupid backup files
+~
