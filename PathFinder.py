@@ -4,8 +4,8 @@
 
 import os
 
-def find_path():
-    paths = ["C:/Users/jon.harris/Desktop/school/final/input/", "data/", "../inputs/"]
+def find_path(verbose=False):
+    paths = ["C:/Users/jon.harris/Desktop/school/final/input/", "data/", "../input/"]
     my_path = ""
     for path in paths:
         try:
@@ -13,6 +13,7 @@ def find_path():
             my_path = path
         except:
             filler_exception=0
-    print("path: {}".format(my_path))
-    print("all files in directory: {}".format(os.listdir(my_path)))
+    if verbose:
+        print("path: {}".format(my_path))
+        print("all files in directory: {}".format(os.listdir(my_path)))
     return my_path
