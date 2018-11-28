@@ -5,5 +5,9 @@
 #don't need notebook checkpoints
 .ipynb_checkpoints/
 
+#or python cache
+__pycache__/
+*.pyc
+
 #stupid backup files
 ~
