@@ -1,0 +1,8 @@
+File Name, Public Score, Private Score, Notes
+log_reg_baseline.csv, 0.67825, 0.68005, data cleaning. logistic regression baseline
+log_reg_pca_0.csv, 0.60208, 0.60377, applied PCA
+log_reg_pca_1.csv, 0.61063, 0.60409, why does PCA make it worse?
+log_reg_lda_0.csv, 0.7356, 0.72993, applied LDA
+log_reg_lda_1.csv, 0.7356, 0.72993, LDA is better but can only train shallow models
+mlp_baseline.csv, 0.73529, 0.72856, got lucky on the initialization on this one. Idk what the parameter is either
+mlp_baseline_2.csv, 0.70327, 0.69916, made net shallower and lowered iteration count to run
