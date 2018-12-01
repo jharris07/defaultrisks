@@ -8,3 +8,5 @@ mlp_baseline.csv,0.73529,0.72856, got lucky on the initialization on this one. I
 mlp_baseline_2.csv,0.70327,0.69916, made net shallower and lowered iteration count to run
 mlp_pca_0.csv,0.55078,0.53906,I thought that the new dimensions would help mlp. I was wrong. Maybe its overfitting to garbage data?
 ensemble_1.csv,0.73623,0.72993,ensemble. Weighted average of log_reg_baseline.csv log_reg_lda_0.csv and mlp_baseline.csv
+log_reg_gridsearch_optimized.csv,0.7363,0.73246,took best params from Jon's gridsearch
+ensemble_2.csv,0.73171,0.73171,enembled with log reg gridsearch
