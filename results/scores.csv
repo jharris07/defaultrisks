@@ -19,3 +19,4 @@ ada_boost_2.csv,0.70974,0.69685,ada with gridsearch
 ada_boost_3.csv,0.70974,0.69685,ada with gridsearch and n_estimators=500
 ensemble_1.csv,0.73623,0.72993,ensemble. Weighted average of log_reg_baseline.csv log_reg_lda_0.csv and mlp_baseline.csv
 ensemble_2.csv,0.73171,0.73798,enembled with log reg gridsearch
+ensemble_3.csv,0.73759,0.73154,added linear regression
