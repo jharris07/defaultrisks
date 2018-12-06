@@ -4,11 +4,19 @@ log_reg_pca_0.csv,0.60208,0.60377, applied PCA
 log_reg_pca_1.csv,0.61063,0.60409, why does PCA make it worse?
 log_reg_lda_0.csv,0.7356,0.72993, applied LDA
 log_reg_lda_1.csv,0.7356,0.72993, LDA is better but can only train shallow models
+log_reg_gridsearch_optimized.csv,0.7363,0.73246,took best params from Jon's gridsearch
 mlp_baseline.csv,0.73529,0.72856, got lucky on the initialization on this one. Idk what the parameter is either
 mlp_baseline_2.csv,0.70327,0.69916, made net shallower and lowered iteration count to run
 mlp_pca_0.csv,0.55078,0.53906,I thought that the new dimensions would help mlp. I was wrong. Maybe its overfitting to garbage data?
+lin_reg.csv,0.7354,0.72973,this shouldn't have done this good
+forest_reg_0.csv,0.50345,0.50331,accidently used classifier so gave all 0s
+forest_reg_1.csv,0.62969,0.62581,used regressor. Outputs in 0.1 increment so not great
+forest_reg_2.csv,0.69128,0.68964,forest with 500 trees
+svr_0.csv,0.53331,0.51757,I don't remember making this. Most predictions are near 0.5
+svr_1.csv,0.59027,0.57979,svr with gridsearch
+ada_boost_1.csv,0.66731,0.66069,decent
+ada_boost_2.csv,0.70974,0.69685,ada with gridsearch
+ada_boost_3.csv,0.70974,0.69685,ada with gridsearch and n_estimators=500
 ensemble_1.csv,0.73623,0.72993,ensemble. Weighted average of log_reg_baseline.csv log_reg_lda_0.csv and mlp_baseline.csv
-log_reg_gridsearch_optimized.csv,0.7363,0.73246,took best params from Jon's gridsearch
 ensemble_2.csv,0.73171,0.73798,enembled with log reg gridsearch
-lin_reg.csv,0.7354,0.72973,this shouldn’t have done this good
-forest_reg.csv,0.50345,0.50331,I believed in you forests! Why did you do this to me?
+ensemble_3.csv,0.73759,0.73154,added linear regression
